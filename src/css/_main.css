@@ -83,10 +83,34 @@ video {
 
 .headline-container {
   position: relative;
-  width: 66.10169%;
-  margin-left: 15.25424%;
-  margin-right: 15.25424%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 150px;
+}
+
+@media (min-width: 768px) {
+  .headline-container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headline-container {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: 33.33333%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .headline-container {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+  }
 }
 
 .headline-container .brand-logo,
@@ -105,13 +129,13 @@ video {
 
 .headline-container .brand-logo {
   top: 39%;
-  left: -10%;
+  left: -11%;
   width: 40%;
 }
 
 .headline-container .sponsor-logo {
   top: 33%;
-  left: 83%;
+  left: 80%;
   width: 30%;
 }
 
@@ -119,10 +143,17 @@ video {
 .headline-container .arrows_copy--bottom {
   position: absolute;
   color: #ffffff;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: bold;
-  left: 35%;
+  left: 33%;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .headline-container .arrows_copy--top,
+  .headline-container .arrows_copy--bottom {
+    font-size: 250%;
+  }
 }
 
 .headline-container .arrows_copy--top {
@@ -205,8 +236,8 @@ a {
   cursor: pointer;
   width: 65px;
   position: absolute;
-  left: 42%;
-  bottom: 100px;
+  left: 48%;
+  bottom: 20px;
   color: #FFF;
   text-align: center;
   z-index: 99;
@@ -254,6 +285,13 @@ a {
             transform: translate(0, 20px);
     opacity: 0;
   }
+}
+
+.menu-container {
+  position: fixed;
+  width: 100%;
+  height: 81px;
+  z-index: 100;
 }
 
 .menu {
