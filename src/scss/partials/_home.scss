@@ -1,11 +1,12 @@
 .headline-container {
 	position: relative;
-	border: 1px solid red;
-	width: span(4 of 12);
-	margin-left: span(4 of 12);
-	margin-right: span(4 of 12);
+	// border: 1px solid red;
+	width: span(8 of 12);
+	margin-left: span(2 of 12);
+	margin-right: span(2 of 12);
+	margin-top: 150px;
 
-	.arrows,
+	// .arrows,
 	.brand-logo,
 	.sponsor-logo {
 		position: absolute;
@@ -21,14 +22,14 @@
 
 
 	.brand-logo {
-		top: 30%;
+		top: 39%;
 		left: -10%;
 		width: 40%;
 	}
 
 	.sponsor-logo {
-		top: 0;
-		left: 0;
+		top: 33%;
+		left: 83%;
 		width: 30%;
 	}
 
@@ -36,14 +37,19 @@
 	.arrows_copy--bottom {
 		position: absolute;
 		color:#ffffff;
-		font-size: 1.3em;
+		font-size: 1.7em;
 		font-weight: bold;
 		left: 35%;
+		text-align: center;
 	}
 
-	// .arrows_copy--top {
-	// 	top:
-	// }
+	.arrows_copy--top {
+		top:12%;
+	}
+
+	.arrows_copy--bottom {
+		top:75%;
+	}
 
 
 }

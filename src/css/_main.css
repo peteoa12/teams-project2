@@ -83,19 +83,17 @@ video {
 
 .headline-container {
   position: relative;
-  border: 1px solid red;
-  width: 32.20339%;
-  margin-left: 32.20339%;
-  margin-right: 32.20339%;
+  width: 66.10169%;
+  margin-left: 15.25424%;
+  margin-right: 15.25424%;
+  margin-top: 150px;
 }
 
-.headline-container .arrows,
 .headline-container .brand-logo,
 .headline-container .sponsor-logo {
   position: absolute;
 }
 
-.headline-container .arrows svg,
 .headline-container .brand-logo svg,
 .headline-container .sponsor-logo svg {
   width: 100%;
@@ -106,14 +104,14 @@ video {
 }
 
 .headline-container .brand-logo {
-  top: 30%;
+  top: 39%;
   left: -10%;
   width: 40%;
 }
 
 .headline-container .sponsor-logo {
-  top: 0;
-  left: 0;
+  top: 33%;
+  left: 83%;
   width: 30%;
 }
 
@@ -121,9 +119,18 @@ video {
 .headline-container .arrows_copy--bottom {
   position: absolute;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: bold;
   left: 35%;
+  text-align: center;
+}
+
+.headline-container .arrows_copy--top {
+  top: 12%;
+}
+
+.headline-container .arrows_copy--bottom {
+  top: 75%;
 }
 
 nav {
@@ -198,7 +205,7 @@ a {
   cursor: pointer;
   width: 65px;
   position: absolute;
-  left: 48%;
+  left: 42%;
   bottom: 100px;
   color: #FFF;
   text-align: center;
