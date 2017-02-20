@@ -1,0 +1,50 @@
+// .ca3-scroll-down-arrow {
+//   background-image: url(../img/down-arrow.svg);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+// body{background-color:#000;}
+
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+  width: 65px;
+  position: absolute;
+  left: 48%;
+  bottom: 100px;
+  color: #FFF;
+  text-align: center;
+  z-index: 99;
+
+  animation: ca3_fade_move_down 2s ease-in-out infinite;
+
+  img {
+    width: 100%;
+  }
+
+  span{
+    font-size: 1.5em;
+    line-height: 40px;
+    width: 100%;
+    top: -10px;
+  }
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}

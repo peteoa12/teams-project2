@@ -64,7 +64,8 @@ section {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 video {
@@ -78,6 +79,250 @@ video {
   min-height: 101%;
   overflow: hidden;
   z-index: -1;
+}
+
+.headline-container {
+  position: relative;
+  border: 1px solid red;
+  width: 32.20339%;
+  margin-left: 32.20339%;
+  margin-right: 32.20339%;
+}
+
+.headline-container .arrows,
+.headline-container .brand-logo,
+.headline-container .sponsor-logo {
+  position: absolute;
+}
+
+.headline-container .arrows svg,
+.headline-container .brand-logo svg,
+.headline-container .sponsor-logo svg {
+  width: 100%;
+}
+
+.headline-container .arrows {
+  width: 100%;
+}
+
+.headline-container .brand-logo {
+  top: 30%;
+  left: -10%;
+  width: 40%;
+}
+
+.headline-container .sponsor-logo {
+  top: 0;
+  left: 0;
+  width: 30%;
+}
+
+.headline-container .arrows_copy--top,
+.headline-container .arrows_copy--bottom {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bold;
+  left: 35%;
+}
+
+nav {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 88, 13, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease, ease-out;
+  transition-delay: 3ms;
+}
+
+nav ul {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+nav ul li {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 4ms;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  font-weight: 700;
+  font-size: 3em;
+  color: #efefef;
+  line-height: 1.389em;
+  text-align: center;
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 4ms;
+}
+
+nav ul li:hover {
+  background-color: #bdd4de;
+}
+
+nav ul li:hover a {
+  color: #2b3a42;
+  border-radius: 0;
+}
+
+header {
+  float: left;
+  width: 100%;
+  height: 320px;
+}
+
+a {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.ca3-scroll-down-link {
+  cursor: pointer;
+  width: 65px;
+  position: absolute;
+  left: 48%;
+  bottom: 100px;
+  color: #FFF;
+  text-align: center;
+  z-index: 99;
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+          animation: ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+.ca3-scroll-down-link img {
+  width: 100%;
+}
+
+.ca3-scroll-down-link span {
+  font-size: 1.5em;
+  line-height: 40px;
+  width: 100%;
+  top: -10px;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes ca3_fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 13px;
+  left: 0;
+  padding: 1em;
+  margin-left: 1em;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .menu-title {
+  margin: 3px 30px;
+  color: #fff;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.overlay {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.menu .top {
+  left: 0;
+  top: 17px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu .middle {
+  left: 0;
+  top: 27px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu .bottom {
+  left: 0;
+  top: 37px;
+  transition: all 0.2s ease-in-out;
+}
+
+.top.clicked {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 40%;
+  background-color: #efefef;
+}
+
+.middle.clicked {
+  display: none;
+}
+
+.bottom.clicked {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 40%;
+  background-color: #efefef;
 }
 
 /*# sourceMappingURL=_main.css.map */

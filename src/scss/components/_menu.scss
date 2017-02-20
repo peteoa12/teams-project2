@@ -1,0 +1,61 @@
+.menu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 13px;
+    left: 0;
+    padding: 1em;
+    margin-left: 1em;
+    z-index: 100;
+    transition:all 0.3s ease-in-out;
+
+    .menu-title {
+        margin: 3px 30px;
+        color: #fff;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+}
+
+.overlay {
+    opacity: 1;
+    transform: translateX(0);
+}
+.menu:hover {
+    cursor: pointer;
+}
+.bar {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background-color: #ffffff;
+}
+.menu .top {
+    left: 0;
+    top: 17px;
+    transition:all 0.2s ease-in-out;
+}
+.menu .middle {
+    left: 0;
+    top: 27px;
+    transition:all 0.2s ease-in-out;
+}
+.menu .bottom {
+    left: 0;
+    top: 37px;
+    transition:all 0.2s ease-in-out;
+}
+.top.clicked {
+    transform: rotate(45deg);
+    top: 40%;
+    background-color: #efefef;
+}
+.middle.clicked {
+    display: none;
+}
+.bottom.clicked {
+    transform: rotate(-45deg);
+    top: 40%;
+    background-color: #efefef;
+}

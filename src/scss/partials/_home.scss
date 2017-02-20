@@ -1,0 +1,49 @@
+.headline-container {
+	position: relative;
+	border: 1px solid red;
+	width: span(4 of 12);
+	margin-left: span(4 of 12);
+	margin-right: span(4 of 12);
+
+	.arrows,
+	.brand-logo,
+	.sponsor-logo {
+		position: absolute;
+
+		svg {
+			width: 100%;
+		}
+	}
+
+	.arrows {
+		width: 100%;
+	}
+
+
+	.brand-logo {
+		top: 30%;
+		left: -10%;
+		width: 40%;
+	}
+
+	.sponsor-logo {
+		top: 0;
+		left: 0;
+		width: 30%;
+	}
+
+	.arrows_copy--top,
+	.arrows_copy--bottom {
+		position: absolute;
+		color:#ffffff;
+		font-size: 1.3em;
+		font-weight: bold;
+		left: 35%;
+	}
+
+	// .arrows_copy--top {
+	// 	top:
+	// }
+
+
+}
