@@ -5,6 +5,8 @@
 	margin-left: span(3 of 12);
 	margin-right: span(3 of 12);
 	margin-top: 150px;
+	max-width: 365px;
+	min-width: 185px;
 
 	@include breakpoint($medium) {
 		width: span(6 of 12);
@@ -62,6 +64,11 @@
 
 		@include breakpoint($medium) {
 			font-size: 250%;
+		}
+
+
+		@include breakpoint($medium) {
+			font-size: 2.5em;
 		}
 
 	}
