@@ -1,9 +1,26 @@
-.product {
-	background-image: url(/assets/img/paper.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	top: -70px;
+.paper {
+	background-color: #ffffff;
 }
 
+
+.paper_border--top,
+.paper_border--bottom {
+	position: absolute;
+	background-image: url(/assets/img/paper.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 51px;
+	z-index: 10;
+}
+
+.paper_border--top {
+	top: -36px;
+	transform:rotate(180deg);
+}
+
+.paper_border--bottom {
+	bottom: -36px;
+}
 

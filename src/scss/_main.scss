@@ -21,13 +21,38 @@ section {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow:hidden;
+  // overflow:hidden;
 }
 
+section {
+  position: relative;
+}
+video {
+  display: none;
+
+
+  @include breakpoint($medium) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100vh;
+    // overflow: hidden;
+    z-index: -1;
+  }
+
+}
+
+
+@import 'partials/nav';
 @import 'partials/home';
 @import 'partials/product';
-@import 'partials/nav';
+@import 'partials/infographic';
 @import 'components/arrow';
 @import 'components/menu';
+@import 'partials/footer';
+
 
 
