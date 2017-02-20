@@ -1,30 +1,11 @@
+
+
 .headline-container {
 	position: relative;
-	// border: 1px solid red;
 	width: span(6 of 12);
-	margin-left: span(3 of 12);
-	margin-right: span(3 of 12);
-	margin-top: 150px;
+	margin:150px auto;
 	max-width: 365px;
 	min-width: 185px;
-
-	@include breakpoint($medium) {
-		width: span(6 of 12);
-		margin-left: span(3 of 12);
-		margin-right: span(3 of 12);
-	}
-
-	@include breakpoint($large) {
-		width: span(4 of 12);
-		margin-left: span(4 of 12);
-		margin-right: span(4 of 12);
-	}
-
-	@include breakpoint($jumbo) {
-		width: span(3 of 12);
-		margin-left: span(4.5 of 12);
-		margin-right: span(4.5 of 12);
-	}
 
 
 	.brand-logo,

@@ -65,7 +65,7 @@ section {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 video {
@@ -78,41 +78,15 @@ video {
   min-width: 100%;
   min-height: 101%;
   overflow: hidden;
-  z-index: -1;
+  z-index: -3;
 }
 
 .headline-container {
   position: relative;
   width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 150px;
+  margin: 150px auto;
   max-width: 365px;
   min-width: 185px;
-}
-
-@media (min-width: 768px) {
-  .headline-container {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .headline-container {
-    width: 33.33333%;
-    margin-left: 33.33333%;
-    margin-right: 33.33333%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .headline-container {
-    width: 25%;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
-  }
 }
 
 .headline-container .brand-logo,
@@ -173,10 +147,19 @@ video {
   top: 75%;
 }
 
+.product {
+  background-image: url(/assets/img/paper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -70px;
+  background-color: #000;
+}
+
 nav {
   height: 100vh;
   width: 100vw;
-  background: rgba(255, 88, 13, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -246,7 +229,7 @@ a {
   width: 65px;
   position: absolute;
   left: 48%;
-  bottom: 20px;
+  bottom: 100px;
   color: #FFF;
   text-align: center;
   z-index: 99;
