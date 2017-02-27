@@ -20,8 +20,11 @@
 }
 
 .info__container--left {
-	display: flex;
-	flex-direction:row;
+	@include breakpoint($medium){
+		display: flex;
+		flex-direction:row;
+	}
+	
 }
 
 
@@ -39,7 +42,7 @@
 	width: 35%;
 	max-width: 200px;
 	margin: 15px auto;
-	border: 1px solid;
+	// border: 1px solid;
 
 	@include breakpoint($medium) {
 		margin: 15px 0 0 0;

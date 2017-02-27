@@ -1,0 +1,26 @@
+
+.confirmation {
+	height: 100vh;
+	width: 100vw;
+	background-color: $brand_primary;
+	opacity:0.9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transform: translateX(-100%);
+	transition-property: transform, opacity;
+	transition-duration: 0.3s, 0.3s;
+	transition-timing-function: ease, ease-out;
+	transition-delay: 3ms;
+}
+
+.product__overview {
+	display: none;
+	width: span(6 of 12);
+	
+}
+
+.product__form {
+	width: span(last 6 of 12);
+}
