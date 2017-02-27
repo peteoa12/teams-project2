@@ -442,6 +442,10 @@ a {
   bottom: -36px;
 }
 
+.product__grid {
+  width: 100%;
+}
+
 .infographic {
   background-image: url(/assets/img/map.jpg);
   background-position: center;
