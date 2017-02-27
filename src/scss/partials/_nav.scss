@@ -17,19 +17,23 @@ nav {
 
 nav ul {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
     width: 100%;
+
+    @include breakpoint($large) {
+        margin-top: 200px;
+    }
 }
 nav ul li {
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 4ms;
-    margin:20px 0;
+    margin:15px 0;
 }
 nav ul li a {
     text-decoration: none;
-    font-family:$menu;
+    font-family:$heading;
     display: block;
     font-weight: 700;
     font-size: 3em;
@@ -42,10 +46,9 @@ nav ul li a {
     transition-delay: 4ms;
 }
 nav ul li:hover {
-    background-color: #bdd4de;
+    background-color: #182650;
 }
 nav ul li:hover a {
-    color: #2b3a42;
     border-radius: 0;
 }
 header {

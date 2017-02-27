@@ -2,15 +2,16 @@
 
 .ca3-scroll-down-link {
   cursor:pointer;
-  width: 65px;
+  width: 8%;
+  max-width: 60px;
   position: absolute;
   left: 48%;
   bottom: 100px;
   color: #FFF;
   text-align: center;
   z-index:99;
-
   animation: ca3_fade_move_down 2s ease-in-out infinite;
+
 
   img {
     width: 100%;
