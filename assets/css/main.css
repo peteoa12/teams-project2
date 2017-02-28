@@ -98,6 +98,12 @@ html, body {
   font-family: "Amatica SC", cursive;
 }
 
+body {
+  -webkit-transform: rotate(180);
+      -ms-transform: rotate(180);
+          transform: rotate(180);
+}
+
 video {
   display: none;
 }
@@ -336,7 +342,7 @@ a {
 }
 
 .mobile-hero {
-  background-image: url(/assets/img/background-mobile.png);
+  background-image: url(../img/background-mobile.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -422,7 +428,7 @@ a {
 .product__section .product__section--top,
 .product__section .product__section--bottom {
   position: absolute;
-  background-image: url(/assets/img/paper.png);
+  background-image: url(../img/paper.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -446,8 +452,47 @@ a {
   width: 100%;
 }
 
+.product__grid .product {
+  border: 5px solid #E38C00;
+  position: relative;
+  margin: 4.34783%;
+}
+
+.product__grid .product__primary {
+  width: 47.82609%;
+  float: left;
+}
+
+.product__grid .product__primary:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.product__grid .product__primary:nth-child(2n + 2) {
+  margin-left: 52.17391%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.product__grid .product__title,
+.product__grid .product__price {
+  position: absolute;
+  background-color: #efefef;
+  left: 50%;
+}
+
+.product__grid .product__image--wrap {
+  width: 4.34783%;
+}
+
+.product__grid .product__image--wrap img {
+  width: 100%;
+}
+
 .infographic {
-  background-image: url(/assets/img/map.jpg);
+  background-image: url(../img/map.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -559,9 +604,9 @@ a {
 }
 
 footer {
-  background-image: url(/assets/img/map.jpg);
+  background-image: url(../img/map.jpg);
   width: 100%;
   z-index: 0;
 }
 
-/*# sourceMappingURL=_main.css.map */
+/*# sourceMappingURL=main.css.map */

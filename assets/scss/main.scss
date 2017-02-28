@@ -13,9 +13,13 @@ html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: $heading;
+
   
 }
 
+body{
+  transform:rotate(180);
+}
 
 
 
