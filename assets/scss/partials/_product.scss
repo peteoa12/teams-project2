@@ -26,12 +26,27 @@
 
 .product__grid {
 	@include container;
+
+
+
+	.product__grid--main,
+	.product__grid--gallery {
+		float: left;
+		width: 100%;
+	}
 }
 
-.product__grid--main,
+.product__grid--main {
+	@include breakpoint($medium){
+		width: span(4 of 12);
+		margin-right: span(1.5);
+	}
+}
+
 .product__grid--gallery {
-	float: left;
-	width: 100%;
+	@include breakpoint($medium){
+		width: span(last 8 of 12);
+	}
 }
 
 .product__grid--main {
@@ -48,19 +63,33 @@
 	position: relative;
 }
 
+.product__primary {
+	@include breakpoint($medium){
+		height: 458px;
+	}
+}
+
 .product__secondary {
 	@include gallery (6 of 12);
 	margin: span(1.5);
+
+	@include breakpoint($medium){
+		@include gallery (4 of 12);
+	}
 }
 
 .product-image-wrap {
+	position: relative;
 	width: 80%;
 	height: 300px;
 	margin: 50px auto;
 	
 	img {
-		width: 100%;
 		height: 100%;
+	}
+
+	@include breakpoint($medium){
+		height: 100px;
 	}
 }
 
@@ -117,6 +146,12 @@
 	font-size: 0.8em;
 	bottom: -10px;
 	left:26.5%;
+}
+
+#productSecondary {
+	@include breakpoint($medium) {
+		display: none;
+	}
 }
 
 

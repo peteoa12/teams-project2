@@ -18,9 +18,32 @@
 .product__overview {
 	display: none;
 	width: span(6 of 12);
-	
+}
+
+.form-section-wrap {
+	@include container;
 }
 
 .product__form {
-	width: span(last 6 of 12);
+	width: 100%;
+	clear: both;
+}
+.form__container {
+	width: 100%;
+}
+
+input {
+	margin-bottom: 5px;
+}
+input[name="firstName"]{
+	width: span(6 of $form_layout);
+	float: left;
+}
+input[name="lastName"] {
+	width: span(last 6 of $form_layout);
+	float: right;
+}
+
+input[name="street"] {
+	width: span(12 of $form_layout);
 }
