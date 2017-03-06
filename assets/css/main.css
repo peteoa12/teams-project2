@@ -466,6 +466,10 @@ a {
   width: 100%;
 }
 
+.product__grid--main {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 768px) {
   .product__grid--main {
     width: 27.77778%;
@@ -492,16 +496,18 @@ a {
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .product__primary {
-    height: 458px;
-  }
+.product__primary {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
 }
 
 .product__secondary {
   width: 45.83333%;
   float: left;
   margin: 5.20833%;
+  height: 0;
+  padding-bottom: 45%;
 }
 
 .product__secondary:nth-child(2n + 1) {
@@ -540,21 +546,15 @@ a {
   }
 }
 
-.product-image-wrap {
-  position: relative;
+.product-image {
+  position: absolute;
   width: 80%;
-  height: 300px;
-  margin: 50px auto;
-}
-
-.product-image-wrap img {
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .product-image-wrap {
-    height: 100px;
-  }
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .product__title,
@@ -562,23 +562,19 @@ a {
 .product__title--secondary,
 .product__price--secondary {
   text-align: center;
-  background-color: #ffffff;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.product__title,
-.product__price {
-  padding: 0 20px;
-}
-
-.product__title {
-  font-size: 1.7em;
-  left: 24%;
-}
-
-.product__price {
-  font-size: 1em;
-  left: 35%;
+.product__title span,
+.product__price span,
+.product__title--secondary span,
+.product__price--secondary span {
+  display: inline-block;
+  background-color: white;
 }
 
 .product__title--secondary,
@@ -587,27 +583,37 @@ a {
   padding: 0 10px;
 }
 
-.product__title,
+.product__title {
+  top: -18px;
+  font-size: 1.5em;
+}
+
 .product__title--secondary {
-  top: -10px;
+  bottom: -14px;
 }
 
 .product__price,
 .product__price--secondary {
   font-family: "Roboto", sans-serif;
+}
+
+.product__price {
   bottom: -10px;
 }
 
 .product__title--secondary {
   font-size: 1.2em;
   top: -10px;
-  left: 13.5%;
+  width: 100%;
 }
 
 .product__price--secondary {
   font-size: 0.8em;
-  bottom: -10px;
-  left: 26.5%;
+  bottom: -8px;
+}
+
+#productSecondary {
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -761,6 +767,10 @@ input[name="lastName"] {
 
 input[name="street"] {
   width: 100%;
+}
+
+.form__section--top {
+  top: -50px;
 }
 
 footer {

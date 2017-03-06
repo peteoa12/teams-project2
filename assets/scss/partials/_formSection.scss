@@ -22,6 +22,7 @@
 
 .form-section-wrap {
 	@include container;
+	// margin: 50px 0;
 }
 
 .product__form {
@@ -46,4 +47,13 @@ input[name="lastName"] {
 
 input[name="street"] {
 	width: span(12 of $form_layout);
+}
+
+
+.form__section--top {
+	top:-50px;
+}
+
+.form__section--bottom {
+	
 }
