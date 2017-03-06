@@ -460,12 +460,6 @@ a {
   clear: both;
 }
 
-.product__grid .product__grid--main,
-.product__grid .product__grid--gallery {
-  float: left;
-  width: 100%;
-}
-
 .product__grid--main {
   margin-bottom: 30px;
 }
@@ -473,6 +467,7 @@ a {
 @media (min-width: 768px) {
   .product__grid--main {
     width: 27.77778%;
+    float: left;
     margin-right: 5.20833%;
   }
 }
@@ -480,6 +475,7 @@ a {
 @media (min-width: 768px) {
   .product__grid--gallery {
     width: 63.88889%;
+    float: right;
   }
 }
 

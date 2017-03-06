@@ -26,28 +26,22 @@
 
 .product__grid {
 	@include container;
-
-
-
-	.product__grid--main,
-	.product__grid--gallery {
-		float: left;
-		width: 100%;
-	}
 }
 
 .product__grid--main {
 
 	margin-bottom: 30px;
 	@include breakpoint($medium){
-		width: span(4 of 12);
+		width:span(4 of 12);
+		float: left;
 		margin-right: span(1.5);
 	}
 }
 
 .product__grid--gallery {
 	@include breakpoint($medium){
-		width: span(last 8 of 12);
+		width:span(last 8 of 12);
+		float: right;
 	}
 }
 
@@ -156,6 +150,8 @@
 		display: none;
 	}
 }
+
+
 
 
 
