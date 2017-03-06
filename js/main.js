@@ -28,3 +28,14 @@ $(window).scroll(function (event) {
     	$(".menu-container").css("background-color","inherit");
     }
 });
+
+//Page loader screen==================================
+setTimeout(function(){
+    $('.load-screen').addClass('loaded');
+}, 3000);
+
+
+var tl = new TimelineMax();
+
+    tl.from("path", 1, {drawSVG:0, ease:Power1.easeInOut});
+
