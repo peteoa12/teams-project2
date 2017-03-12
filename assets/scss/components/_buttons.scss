@@ -1,14 +1,16 @@
-figure {
-  width: 200px;
+.btn {
+  width: 50%;
+  max-width: 200px;
   height: 60px;
   cursor: pointer;
   perspective: 500px;
   -webkit-perspective: 500px;
   float: left;
-  margin: 20px auto;
+  margin: 50px auto;
+  // position: relative;
 }
 
-figure div {
+.btn div {
   height: 100%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -16,11 +18,11 @@ figure div {
   -webkit-transition: 0.25s;
 }
 
-figure:hover div {
+.btn:hover div {
   transform: rotateX(-90deg);
 }
 
-span {
+.btn div span {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -30,18 +32,18 @@ span {
   line-height: 50px;
   font-size: 17pt;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
-span:nth-child(1) {
+.btn div span:nth-child(1) {
   color: $button;
   transform: translate3d(0, 0, 30px);
   -webkit-transform: translate3d(0, 0, 30px);
 }
 
-span:nth-child(2) {
-  color: $button;
-  background: #fff;
+.btn div span:nth-child(2) {
+  color: white;
+  background: $button;
   transform: rotateX(90deg) translate3d(0, 0, 30px);
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
