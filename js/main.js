@@ -35,7 +35,7 @@ setTimeout(function(){
 }, 3000);
 
 
-var tl = new TimelineMax();
+// var tl = new TimelineMax();
 
-    tl.from("path", 1, {drawSVG:0, ease:Power1.easeInOut});
+//     tl.from("path", 1, {drawSVG:0, ease:Power1.easeInOut});
 

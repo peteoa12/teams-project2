@@ -1,6 +1,5 @@
 .product__section {
 	background-color: #ffffff;
-	// z-index: 4000;
 
 	.product__section--top,
 	.product__section--bottom {
@@ -30,7 +29,8 @@
 
 .product__grid--main {
 
-	margin-bottom: 30px;
+	margin: 3.30833% 0;
+
 	@include breakpoint($medium){
 		width:span(4 of 12);
 		float: left;
@@ -45,9 +45,6 @@
 	}
 }
 
-.product__grid--main {
-	margin-top: 20px;
-}
 
 .product__grid--gallery {
 	margin-bottom: 50px;
@@ -57,6 +54,11 @@
 .product {
 	border:5px solid $brand_primary;
 	position: relative;
+	@include trans;
+
+	&:hover {
+		transform:scale(1.1);
+	}
 
 }
 
@@ -65,6 +67,9 @@
 	height: 0;
 	padding-bottom: 100%;
 
+	@include breakpoint($medium){
+		padding-bottom: 130%;
+	}
 }
 
 .product__secondary {
@@ -77,6 +82,8 @@
 
 	@include breakpoint($medium){
 		@include gallery (4 of 12);
+		padding-bottom: 22%;
+		margin: span(1.5);
 	}
 }
 

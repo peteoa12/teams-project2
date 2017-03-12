@@ -1,59 +1,105 @@
 
-.confirmation {
-	height: 100vh;
-	width: 100vw;
-	background-color: $brand_primary;
-	opacity:0.9;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	transform: translateX(-100%);
-	transition-property: transform, opacity;
-	transition-duration: 0.3s, 0.3s;
-	transition-timing-function: ease, ease-out;
-	transition-delay: 3ms;
-}
+// .confirmation {
+// 	height: 100vh;
+// 	width: 100vw;
+// 	background-color: $brand_primary;
+// 	opacity:0.9;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 100;
+// 	transform: translateX(-100%);
+// 	transition-property: transform, opacity;
+// 	transition-duration: 0.3s, 0.3s;
+// 	transition-timing-function: ease, ease-out;
+// 	transition-delay: 3ms;
+// }
 
-.product__overview {
-	display: none;
-	width: span(6 of 12);
-}
 
-.form-section-wrap {
+.content-wrapper {
 	@include container;
-	// margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+}
+
+.product_overview {
+	display: none;
+
+	@include breakpoint($medium) {
+		display: inherit;
+	}
 }
 
 .product__form {
 	width: 100%;
-	clear: both;
-}
-.form__container {
-	width: 100%;
+
+	@include breakpoint($medium) {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
-input {
-	margin-bottom: 5px;
-}
-input[name="firstName"]{
-	width: span(6 of $form_layout);
+form {
+	box-sizing: border-box;
 	float: left;
-}
-input[name="lastName"] {
-	width: span(last 6 of $form_layout);
-	float: right;
-}
+	width: 100%;
 
-input[name="street"] {
-	width: span(12 of $form_layout);
-}
+	@include breakpoint($medium) {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-
-.form__section--top {
-	top:-50px;
-}
-
-.form__section--bottom {
+	input {
+		float: left;
+		padding:5px;
+		margin: 0;
+		padding:0;
+		margin-bottom: 10px;
 	
+	}
+
+	select {
+		float: left;
+	}
+
+	input[name="firstName"],
+	input[name="expiration"],
+	input[name="email"] {
+		margin-right: 2%;
+	}
+
+	input[name="firstName"],
+	input[name="lastName"],
+	input[name="expiration"],
+	input[name="email"],
+	input[name="security"],
+	select {
+		width: 45.3%;
+	}
+
+	input[name="street"],
+	input[name="car_number"] {
+		width: 96%;
+	}
+
+
+	input[name="city"]{
+		width: 44.9%;
+		margin-right: 2%;
+	}
+
+	input[name="state"]{
+		width: 10%;
+		margin-right: 2%;
+	}
+
+	input[name="zip"]{
+		width: 28.4%;
+		
+	}
+}
+
+.disclaimer {
+	float: left;
 }
