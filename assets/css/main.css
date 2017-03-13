@@ -125,6 +125,11 @@ body {
   overflow-x: hidden;
 }
 
+.noScroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 video {
   display: none;
 }

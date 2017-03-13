@@ -42,7 +42,7 @@ tl1.from(".bigTrunk", 0.2, {drawSVG:0, ease:Power1.easeInOut});
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration:250 })
 				.setTween(tl1) // trigger a TweenMax.to tween
-				.addIndicators({name: "time line 3(duration: 250)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 3(duration: 250)"}) // add indicators (requires plugin)
 				.addTo(controller);
 
 
@@ -55,7 +55,7 @@ tl2.from(".giantTrunk", 0.5, {drawSVG:0, ease:Power1.easeInOut});
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger2", duration:270 })
 				.setTween(tl2) // trigger a TweenMax.to tween
-				.addIndicators({name: "time line 2(duration: 270)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 2(duration: 270)"}) // add indicators (requires plugin)
 				.addTo(controller);
 
 
@@ -67,7 +67,7 @@ tl3.from(".line2", 0.5, {drawSVG:0, ease:Power1.easeInOut});
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger3", duration:220 })
 				.setTween(tl3) // trigger a TweenMax.to tween
-				.addIndicators({name: "time line 3(duration: 220)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 3(duration: 220)"}) // add indicators (requires plugin)
 				.addTo(controller);
 
 
@@ -78,7 +78,7 @@ tl4.from(".line3", 1, {drawSVG:0, ease:Power1.easeInOut});
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger4", duration:220 })
 				.setTween(tl4) // trigger a TweenMax.to tween
-				.addIndicators({name: "time line 4(duration: 220)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 4(duration: 220)"}) // add indicators (requires plugin)
 				.addTo(controller);
 
 
@@ -87,7 +87,7 @@ tl5.fromTo("#productBundle", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.
 tl5.fromTo("#productForm", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
 tl5.fromTo("#submitBtn", 1, {alpha:0, y:75}, {alpha:1, y:0, ease: Power4.easeInOut});
 
-var scene = new ScrollMagic.Scene({ triggerElement: "#trigger5", duration:300 })
+var scene = new ScrollMagic.Scene({ triggerElement: "#trigger5", duration:220 })
 				.setTween(tl5) // trigger a TweenMax.to tween
-				.addIndicators({name: "time line 4(duration: 300)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 4(duration: 220)"}) // add indicators (requires plugin)
 				.addTo(controller);

@@ -38,11 +38,12 @@ setTimeout(function(){
 
 $("#submitBtn").on('click', function() {
     $(".confirmation").addClass("overlay");
-    console.log("Form submitted");
+    
 });
 
 $(".exit").on('click', function() {
     $(".confirmation").removeClass("overlay");
+   
 });
 
 //Scroll to product section==========================
