@@ -27,13 +27,19 @@ footer {
 		@include breakpoint($medium) {
 			@include gallery(3 of $footer_layout);
 		}
-
-		a {
-			color: white;
-			font-size: 0.8em;
-		}
 		
 	}
+
+	a {
+		color: white;
+		font-size: 0.8em;
+
+		@include breakpoint($large) {
+			font-size: 1em;
+		}
+	}
+
+
 }
 
 .social-icons {

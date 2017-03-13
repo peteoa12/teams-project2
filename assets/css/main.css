@@ -192,97 +192,6 @@ video {
   }
 }
 
-.menu-container {
-  position: fixed;
-  width: 100vw;
-  height: 81px;
-  z-index: 100;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu {
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 13px;
-  left: 0;
-  padding: 1em;
-  margin-left: 1em;
-  z-index: 99;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu .menu-title {
-  margin: 3px 30px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.exit {
-  position: absolute;
-  top: 13px;
-  left: 0;
-  padding: 1em;
-}
-
-.overlay {
-  opacity: 0.97;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.menu:hover {
-  cursor: pointer;
-}
-
-.bar {
-  width: 30px;
-  height: 5px;
-  position: absolute;
-  background-color: #ffffff;
-}
-
-.menu .top {
-  left: 0;
-  top: 17px;
-  transition: all 0.2s ease-in-out;
-}
-
-.menu .middle {
-  left: 0;
-  top: 27px;
-  transition: all 0.2s ease-in-out;
-}
-
-.menu .bottom {
-  left: 0;
-  top: 37px;
-  transition: all 0.2s ease-in-out;
-}
-
-.top.clicked {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 40%;
-  background-color: #efefef;
-}
-
-.middle.clicked {
-  display: none;
-}
-
-.bottom.clicked {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 40%;
-  background-color: #efefef;
-}
-
 .load-screen {
   width: 100vw;
   height: 100vh;
@@ -559,6 +468,7 @@ a {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1024px;
 }
 
 .product__grid:after {
@@ -602,23 +512,15 @@ a {
 }
 
 .product__primary {
-  width: 100%;
   height: 0;
-  padding-bottom: 100%;
-}
-
-@media (min-width: 768px) {
-  .product__primary {
-    padding-bottom: 147%;
-  }
+  padding-bottom: 142%;
 }
 
 .product__secondary {
   width: 47.05882%;
   float: left;
-  margin: 4.34783%;
-  height: 0;
-  padding-bottom: 70%;
+  padding-bottom: 60%;
+  margin-bottom: 4.34783%;
 }
 
 .product__secondary:nth-child(2n + 1) {
@@ -641,8 +543,6 @@ a {
     padding-bottom: 30%;
     margin: 0%;
     margin-bottom: 30px;
-    padding-bottom: 100%;
-    padding-bottom: 30%;
   }
   .product__secondary:nth-child(3n + 1) {
     margin-left: 0;
@@ -860,7 +760,7 @@ a {
   height: 100vh;
   width: 100vw;
   background-color: #E38C00;
-  opacity: 0;
+  opacity: 0.95;
   position: fixed;
   top: 0;
   left: 0;
@@ -1140,9 +1040,15 @@ footer {
   }
 }
 
-.footer-nav li a {
+.footer-nav a {
   color: white;
   font-size: 0.8em;
+}
+
+@media (min-width: 1024px) {
+  .footer-nav a {
+    font-size: 1em;
+  }
 }
 
 .social-icons {
@@ -1158,6 +1064,97 @@ footer {
 
 .social-icons .social {
   margin-right: 5px;
+}
+
+.menu-container {
+  position: fixed;
+  width: 100vw;
+  height: 81px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 13px;
+  left: 0;
+  padding: 1em;
+  margin-left: 1em;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .menu-title {
+  margin: 3px 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.exit {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  padding: 1em;
+}
+
+.overlay {
+  opacity: 0.97;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.menu .top {
+  left: 0;
+  top: 17px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu .middle {
+  left: 0;
+  top: 27px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu .bottom {
+  left: 0;
+  top: 37px;
+  transition: all 0.2s ease-in-out;
+}
+
+.top.clicked {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 40%;
+  background-color: #efefef;
+}
+
+.middle.clicked {
+  display: none;
+}
+
+.bottom.clicked {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 40%;
+  background-color: #efefef;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,6 +26,7 @@
 
 .product__grid {
 	@include container;
+	max-width: 1024px;
 }
 
 .product__grid--main {
@@ -63,20 +64,19 @@
 }
 
 .product__primary {
-	width: 100%;
+	// width: 100%;
 	height: 0;
-	padding-bottom: 100%;
+	padding-bottom: 142%;
 
 	@include breakpoint($medium) {
-		padding-bottom: 147%;
+		// padding-bottom: 147%;
 	}
 }
 
 .product__secondary {
 	@include gallery (6 of $product_layout);
-	margin: span(1);
-	height: 0;
-	padding-bottom: 70%;
+	padding-bottom: 60%;
+	margin-bottom:span(1);
 
 
 
@@ -85,8 +85,6 @@
 		padding-bottom: 30%;
 		margin: span(0.5);
 		margin-bottom:30px;
-		padding-bottom: 100%;
-		padding-bottom: 30%;
 	}
 }
 

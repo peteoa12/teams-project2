@@ -38,14 +38,19 @@ setTimeout(function(){
 
 $("#submitBtn").on('click', function() {
     $(".confirmation").addClass("overlay");
+    console.log("Form submitted");
 });
 
 $(".exit").on('click', function() {
     $(".confirmation").removeClass("overlay");
 });
 
+//Scroll to product section==========================
+$("#scrollDown").on('click', function() {
+    $(window).scrollTo("form", 40000);
+});
 
-// var tl = new TimelineMax();
 
-//     tl.from("path", 1, {drawSVG:0, ease:Power1.easeInOut});
+
+
 
