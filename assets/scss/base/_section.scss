@@ -6,6 +6,7 @@ section {
 .section__wrap {
 	@include container;
 	margin: 0 auto;
+	// overflow-x: hidden;
 
 	@include breakpoint($jumbo) {
 		max-width: 1440px;
