@@ -26,8 +26,15 @@
     }
 }
 
+.exit {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    padding: 1em;
+}
+
 .overlay {
-    opacity: 0.95;
+    opacity: 0.97;
     transform: translateX(0);
 }
 .menu:hover {

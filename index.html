@@ -15,7 +15,8 @@
 
 
   <body>
-     <!--  <div class="load-screen">
+      
+      <!-- <div class="load-screen">
         <div class="brand-logo--load">
             <svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840.4 400.9">
                 <defs>
@@ -30,9 +31,10 @@
                 </defs>
                   <path id="brandLogo" class="cls-55" d="M145.4,0,83.8,102.7,116.7,92l-60,108.4,36.1-18.9-63.3,115L73,276,0,400.1H352.4V355.7h8.2l46.8,44.4h92.9l-67.4-67.4,37.8-37.8-.8-107.6H365.6l-11.5,8.2V166.7L461.7,59.9,564.4,161.8h22.2l92-90.4,92,91.2h15.6L661.3,38.6l-96.9,97.8L430.5,1.6l-198.8,198L170.9,90.3l32,14.8L145.4,0Zm83,203.7-13.1,13.1-23.8-34.5,36.9,21.4Zm49.3,37.8V380.3l-50.9-88.7Zm115-10.6v55.9H352.4V269.5l40.3-38.6Z M674.5,187.3v49.3H590.7v27.9h85.4v52.6H590.7v27.1h85.4v56.7H513.5V187.3Zm42.7,213.6h71.5V187.3H717.2Zm87.9-194.7a17.35,17.35,0,0,0,17.2,17.3c9.9,0,18.1-7.4,18.1-17.3s-8.2-17.3-18.1-17.3A17.48,17.48,0,0,0,805.1,206.2Zm3.3,0c0-9,6.6-14.8,14-14.8,8.2,0,14.8,5.8,14.8,14.8A14.77,14.77,0,0,1,822.4,221C815,221,808.4,214.4,808.4,206.2Zm7.4-10.7H824c4.9,0,6.6,2.5,6.6,5.8,0,4.1-1.6,5.7-4.9,5.7l5.7,9h-3.3l-5.8-9H819v9h-3.3V195.5Zm3.3,9.1h3.3c2.5,0,5.8,0,5.8-3.3,0-2.5-2.5-3.3-4.9-3.3h-4.1v6.6h-.1Z"/>
             </svg>
-            <!-- REI -->
+         
         </div>
       </div> -->
+     
       <nav class="overlay__screen">
           <ul>
               <li><a href="#about" class="about-link">About Us</a>
@@ -449,16 +451,26 @@
       </section>
 
       <section class="product__section form__section">
-          <div class="product__section--top form__section--top"></div>
+          <div class="form__section--top"></div>
+
+          <div class="confirmation">
+
+            <div class="confirmation__content">
+              <i class="fa fa-times fa-2x exit" aria-hidden="true"></i> 
+              <h2>Thank You!</h2>
+              <span for="confirmation">Confirmation Number: #097268</span>
+              <p>Your contribution will help us reach our full potential and preserve the history, culture and natural wonders.</p>
+            </div>
+          </div>
 
           <div class="content-wrapper">
 
-              <div class="product_overview"> <!-- position relative -->
-                <div class="product-bundle" style="background-image: url('assets/img/bundle.png')"></div>
-              </div>
+              
+              <div class="product-bundle content" style="background-image: url('assets/img/bundle.png')"></div>
+      
           
-              <div class="product__form">
-                  <h2 class="section__heading section__heading--main section__heading--alternate section__heading--left">How You Give:</h2>
+              <div class="product__form content">
+                  <h2 class="section__heading section__heading--main section__heading--alternate section__heading">How You Give:</h2>
                   <form method="post" id="donation-form">
                       <input type="text" name="firstName" placeholder="First Name">
                       <input type="text" name="lastName" placeholder="Last Name">
@@ -479,14 +491,15 @@
                           <option value="$100">$100</option>
                       </select>
                   </form>
+                  <div class="disclaimer">* Winners will be announced 3/1/17</div>
+                  <div id="submitBtn" class="btn" type="submit" name="submit-entry">
+                    <div>
+                      <span>Submit Entry</span>
+                      <span>Donate!</span>
+                    </div>
+                  </div>
               </div>
-              <div class="disclaimer">* Winners will be announced 3/1/17</div>
-              <div class="btn" type="submit" name="submit-entry">
-                <div>
-                  <span>Submit Entry</span>
-                  <span>Donate!</span>
-                </div>
-              </div>
+
           </div> <!-- end contant wrapper -->
           <div class="product__section--bottom form__section--bottom"></div>
       </section>

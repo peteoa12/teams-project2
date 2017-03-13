@@ -34,6 +34,16 @@ setTimeout(function(){
     $('.load-screen').addClass('loaded');
 }, 3000);
 
+//Confirmation screen=================================
+
+$("#submitBtn").on('click', function() {
+    $(".confirmation").addClass("overlay");
+});
+
+$(".exit").on('click', function() {
+    $(".confirmation").removeClass("overlay");
+});
+
 
 // var tl = new TimelineMax();
 
