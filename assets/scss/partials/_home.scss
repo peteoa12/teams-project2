@@ -4,6 +4,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100vh;
+	// z-index: 1020;
 }
 
 
@@ -21,12 +22,14 @@
 
 
 
+
 .headline-container {
 	position: relative;
 	width: span(6 of 12);
 	margin:150px auto;
 	max-width: 365px;
 	min-width: 185px;
+	z-index: 1020;
 
 
 	.brand-logo,

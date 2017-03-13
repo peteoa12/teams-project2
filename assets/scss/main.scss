@@ -8,14 +8,18 @@
 @import 'base/breakpoints';
 @import 'base/section';
 
+#trigger1,
+#trigger2,
+#trigger3,
+#trigger4 {
+  font-family: $menu;
+}
+
 html, body {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: $heading;
-  // @include container;
-
-  
 }
 
 body{
