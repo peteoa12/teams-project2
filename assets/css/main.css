@@ -85,6 +85,7 @@ section {
 @media (min-width: 768px) {
   .section__heading {
     text-align: left;
+    font-size: 3em;
   }
 }
 
@@ -386,10 +387,16 @@ a {
 .headline-container {
   position: relative;
   width: 47.82609%;
-  margin: 150px auto;
+  margin: 30% auto;
   max-width: 365px;
   min-width: 185px;
   z-index: 1020;
+}
+
+@media (min-width: 768px) {
+  .headline-container {
+    margin: 150px auto;
+  }
 }
 
 .headline-container .brand-logo,
@@ -740,9 +747,16 @@ a {
 
 .info__body {
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.2em;
   margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .info__body {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
 }
 
 .trees {
@@ -792,13 +806,13 @@ a {
 
 .confirmation .confirmation__content {
   width: 80%;
-  margin: 100px auto;
+  margin: 70px auto;
   text-align: center;
   color: white;
 }
 
 .confirmation .confirmation__content h2 {
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 60px;
 }
 
@@ -810,7 +824,7 @@ a {
 
 .confirmation .confirmation__content span, .confirmation .confirmation__content p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
 .confirmation .confirmation__content p {

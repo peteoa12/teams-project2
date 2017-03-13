@@ -15,10 +15,14 @@ var hiddenOnLoad = [
 	"#brandFill",
 	"#sponsorLogo",
 	".arrows_copy--top",
-	".arrows_copy--bottom"
+	".arrows_copy--bottom",
+	".product-image",
+	".product"
 ]
 TweenMax.set(hiddenOnLoad, {alpha:0});
 
+
+//Load screen animation
 var tlIntro = new TimelineMax();
 
 tlIntro.fromTo("#arrowLayer", 1, {alpha:0, rotation:0},{alpha:1, rotation:720, ease: Power1.SlowMo});
@@ -28,9 +32,23 @@ tlIntro.fromTo(".arrows_copy--bottom", 0.5, {alpha:0, y:50},{alpha:1, y:0, ease:
 tlIntro.fromTo("#brandFill", 0.5, {alpha:0, x:-50},{alpha:1, x:0, ease: Power4.easeInOut});
 
 
+
+
+
 //Little Trees
 
 var controller = new ScrollMagic.Controller();
+
+//Product animation
+var tl0 = new TimelineMax();
+tl0.staggerFromTo(".product", 0.4, {x:100, alpha:0}, {x:0,alpha:1});
+tl0.staggerFromTo(".product-image", 0.6, {x:100, alpha:0}, {x:0,alpha:1});
+
+
+var scene = new ScrollMagic.Scene({ triggerElement: "#trigger0", duration:220 })
+				.setTween(tl0) // trigger a TweenMax.to tween
+				// .addIndicators({name: "time line 0(duration: 220)"}) // add indicators (requires plugin)
+								.addTo(controller);
 
 var tl1 = new TimelineMax();
 tl1.fromTo("#infoHeadline", 1, {alpha:0, y:100}, {alpha:1, y:0, ease: Power4.easeInOut});
@@ -87,7 +105,11 @@ tl5.fromTo("#productBundle", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.
 tl5.fromTo("#productForm", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
 tl5.fromTo("#submitBtn", 1, {alpha:0, y:75}, {alpha:1, y:0, ease: Power4.easeInOut});
 
-var scene = new ScrollMagic.Scene({ triggerElement: "#trigger5", duration:220 })
+var scene = new ScrollMagic.Scene({ triggerElement: "#trigger5", duration:140 })
 				.setTween(tl5) // trigger a TweenMax.to tween
-				// .addIndicators({name: "time line 4(duration: 220)"}) // add indicators (requires plugin)
+				// .addIndicators({name: "time line 4(duration: 140)"}) // add indicators (requires plugin)
 				.addTo(controller);
+
+
+
+

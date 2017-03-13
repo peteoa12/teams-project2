@@ -75,9 +75,14 @@
 
 .info__body {
 	font-family: $menu;
-	font-size: 2em;
-	line-height: 1.5em;
+	font-size: 1.4em;
+	line-height: 1.2em;
 	margin-top: 20px;
+
+	@include breakpoint($large) {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
 
 }
 

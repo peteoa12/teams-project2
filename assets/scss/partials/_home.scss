@@ -26,10 +26,14 @@
 .headline-container {
 	position: relative;
 	width: span(6 of 12);
-	margin:150px auto;
+	margin:30% auto;
 	max-width: 365px;
 	min-width: 185px;
 	z-index: 1020;
+
+	@include breakpoint($medium) {
+		margin:150px auto;
+	}
 
 
 	.brand-logo,
