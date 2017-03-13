@@ -5,7 +5,11 @@ section {
 
 .section__wrap {
 	@include container;
-	max-width: 1440px;
+	margin: 0 auto;
+
+	@include breakpoint($jumbo) {
+		max-width: 1440px;
+	}
 }
 
 .section__heading {

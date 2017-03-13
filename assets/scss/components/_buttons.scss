@@ -6,7 +6,11 @@
   perspective: 500px;
   -webkit-perspective: 500px;
   float: left;
-  margin: 50px auto;
+  margin: 50px 25%;
+
+  @include breakpoint($medium) {
+    margin: 50px 35%;
+  }
 }
 
 .btn div {

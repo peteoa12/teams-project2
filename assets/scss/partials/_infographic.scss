@@ -5,16 +5,10 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: #efefef;
 	z-index: 0;
 }
-
-// .infographic__wrap {
-// 	@include container;
-// 	max-width: 1440px;
-// }
-
-
 
 .info__container--left,
 .info__container--right {

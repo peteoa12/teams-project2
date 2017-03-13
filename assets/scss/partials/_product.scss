@@ -30,7 +30,7 @@
 
 .product__grid--main {
 
-	margin: 3.30833% 0;
+	margin: 50px 0;
 
 	@include breakpoint($medium){
 		width:span(4 of 12);
@@ -67,23 +67,26 @@
 	height: 0;
 	padding-bottom: 100%;
 
-	@include breakpoint($medium){
-		padding-bottom: 100%;
+	@include breakpoint($medium) {
+		padding-bottom: 147%;
 	}
 }
 
 .product__secondary {
-	@include gallery (6 of 12);
-	// margin: span(1.5);
+	@include gallery (6 of $product_layout);
+	margin: span(1);
 	height: 0;
-	padding-bottom: 100%;
+	padding-bottom: 70%;
 
 
 
 	@include breakpoint($medium){
 		@include gallery (4 of 12);
-		padding-bottom: 22%;
+		padding-bottom: 30%;
+		margin: span(0.5);
 		margin-bottom:30px;
+		padding-bottom: 100%;
+		padding-bottom: 30%;
 	}
 }
 
