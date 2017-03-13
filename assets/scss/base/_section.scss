@@ -5,7 +5,7 @@ section {
 
 .section__wrap {
 	@include container;
-	// margin: span(2) 0;
+	max-width: 1440px;
 }
 
 .section__heading {

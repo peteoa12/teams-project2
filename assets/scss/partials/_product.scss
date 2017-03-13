@@ -35,7 +35,6 @@
 	@include breakpoint($medium){
 		width:span(4 of 12);
 		float: left;
-		margin-right: span(1.5);
 	}
 }
 
@@ -48,7 +47,7 @@
 
 
 .product__grid--gallery {
-	margin-bottom: 50px;
+	margin: 50px 0;
 }
 
 
@@ -69,22 +68,22 @@
 	padding-bottom: 100%;
 
 	@include breakpoint($medium){
-		padding-bottom: 130%;
+		padding-bottom: 100%;
 	}
 }
 
 .product__secondary {
 	@include gallery (6 of 12);
-	margin: span(1.5);
+	// margin: span(1.5);
 	height: 0;
-	padding-bottom: 45%;
+	padding-bottom: 100%;
 
 
 
 	@include breakpoint($medium){
 		@include gallery (4 of 12);
 		padding-bottom: 22%;
-		margin: span(1.5);
+		margin-bottom:30px;
 	}
 }
 
@@ -159,6 +158,10 @@
 	}
 }
 
+.section-wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+}
 
 
 

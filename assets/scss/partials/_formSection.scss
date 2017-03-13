@@ -70,10 +70,6 @@
 	transform:rotate(180deg);
 }
 
-.content-wrapper {
-	@include container;
-}
-
 .content {
 	@include breakpoint($large) {
 		@include gallery(6 of 12);
@@ -81,7 +77,7 @@
 }
 
 .product-bundle {
-	padding-bottom: 50%;
+	padding-bottom: 500px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
