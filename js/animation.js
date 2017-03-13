@@ -84,8 +84,8 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger4", duration:220 })
 
 var tl5 = new TimelineMax();
 tl5.fromTo("#productBundle", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
-tl5.fromTo("#productForm", 1, {alpha:0, x:1000}, {alpha:1, x:0, ease: Power4.easeInOut});
-tl5.fromTo("#submitBtn", 1, {alpha:0, y:1000}, {alpha:1, y:0, ease: Power4.easeInOut});
+tl5.fromTo("#productForm", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
+tl5.fromTo("#submitBtn", 1, {alpha:0, y:75}, {alpha:1, y:0, ease: Power4.easeInOut});
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger5", duration:300 })
 				.setTween(tl5) // trigger a TweenMax.to tween

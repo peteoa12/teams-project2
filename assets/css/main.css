@@ -122,6 +122,7 @@ body {
   -webkit-transform: rotate(180);
       -ms-transform: rotate(180);
           transform: rotate(180);
+  overflow-x: hidden;
 }
 
 video {
