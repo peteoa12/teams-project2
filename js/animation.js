@@ -113,6 +113,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger4", duration:220 })
 
 var tl5 = new TimelineMax();
 tl5.fromTo("#productBundle", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
+tl5.staggerFromTo(".secondary-icon", 0.6, {x:-100, alpha:0}, {x:0,alpha:1,ease:Back.easeOut}, 0.5);
 tl5.fromTo("#productForm", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
 tl5.fromTo("#submitBtn", 1, {alpha:0, y:75}, {alpha:1, y:0, ease: Power4.easeInOut});
 

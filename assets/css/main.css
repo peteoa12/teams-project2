@@ -897,6 +897,7 @@ a {
 }
 
 .product-bundle {
+  position: relative;
   padding-bottom: 500px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -908,6 +909,84 @@ a {
   .product-bundle {
     display: inherit;
   }
+}
+
+.product-bundle .primary-icon,
+.product-bundle .secondary-icon {
+  position: absolute;
+  z-index: 10;
+}
+
+.product-bundle .primary-icon {
+  width: 40%;
+  top: 200px;
+  left: 2%;
+}
+
+.product-bundle .secondary-icon {
+  width: 25%;
+}
+
+.product-bundle .line {
+  position: absolute;
+  border-top: 1px solid darkgray;
+  height: 1px;
+}
+
+.product-bundle #line1 {
+  width: 200px;
+  top: 180px;
+  left: 8%;
+  -webkit-transform: rotate(81deg);
+      -ms-transform: rotate(81deg);
+          transform: rotate(81deg);
+}
+
+.product-bundle #line2 {
+  width: 206px;
+  top: 139px;
+  left: 21%;
+  -webkit-transform: rotate(118deg);
+      -ms-transform: rotate(118deg);
+          transform: rotate(118deg);
+}
+
+.product-bundle #line3 {
+  width: 206px;
+  top: 197px;
+  left: 29%;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.product-bundle #icon1 {
+  left: 12%;
+}
+
+.product-bundle #icon2 {
+  left: 33%;
+  top: -10px;
+}
+
+.product-bundle #icon3 {
+  left: 53%;
+  top: 30px;
+}
+
+.product-bundle #icon4 {
+  left: 67%;
+  top: 119px;
+}
+
+.product-bundle #icon5 {
+  left: 67%;
+  top: 242px;
+}
+
+.product-bundle #icon6 {
+  left: 59%;
+  top: 357px;
 }
 
 .product__form {
@@ -1203,6 +1282,7 @@ footer {
 .redirect {
   position: absolute;
   width: 70%;
+  max-width: 640px;
   margin: 0 auto;
   background-color: white;
   padding: 40px 20px;

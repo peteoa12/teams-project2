@@ -77,14 +77,88 @@
 }
 
 .product-bundle {
+	position: relative;
 	padding-bottom: 500px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: none;
+	// border: 1px solid red;
 
 	@include breakpoint($large) {
 		display: inherit;
+	}
+
+	.primary-icon,
+	.secondary-icon {
+		position: absolute;
+		z-index: 10;
+	}
+
+	.primary-icon {
+		width: 40%;
+		top: 200px;
+		left: 2%;
+	}
+
+	.secondary-icon {
+		width: 25%;
+	}
+
+	.line {
+		position: absolute;
+		border-top: 1px solid darkgray;
+		height: 1px;
+	}
+
+	#line1 {
+		width:200px;
+		top: 180px;
+    	left: 8%;
+    	transform: rotate(81deg);
+	}
+
+	#line2 {
+		width: 206px;
+	    top: 139px;
+	    left: 21%;
+	    transform: rotate(118deg);
+	}
+
+	#line3 {
+		width: 206px;
+	    top: 197px;
+	    left: 29%;
+	    transform: rotate(135deg);
+	}
+
+	#icon1 {
+		left: 12%;
+	}
+
+	#icon2 {
+		left: 33%;
+		top: -10px;
+	}
+
+	#icon3 {
+		left: 53%;
+		top: 30px;
+	}
+
+	#icon4 {
+		left: 67%;
+		top: 119px;
+	}
+
+	#icon5 {
+		left: 67%;
+		top: 242px;
+	}
+
+	#icon6 {
+		left: 59%;
+		top: 357px;
 	}
 
 }
