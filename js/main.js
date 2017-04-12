@@ -29,6 +29,20 @@ $(window).scroll(function (event) {
     }
 });
 
+//Redirect screen close button ========================
+
+$("#close").on('click', function(event) {
+    event.preventDefault();
+    // $(this) .toggleClass("open");
+    $(".redirect").removeClass("redirect-open");
+});
+
+$(".menu-link").on('click', function(event) {
+    event.preventDefault();
+    $(".redirect").addClass("redirect-open");
+});
+
+
 //Page loader screen==================================
 setTimeout(function(){
     $('.load-screen').addClass('loaded');
@@ -50,6 +64,14 @@ $(".exit").on('click', function() {
 $("#scrollDown").on('click', function() {
     $(window).scrollTo("form", 40000);
 });
+
+//Find the anchor tag in the <div>
+
+  $(".product").click(function() {
+    console.log("click working!")
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 
 
 

@@ -35,20 +35,26 @@ tlIntro.fromTo("#brandFill", 0.5, {alpha:0, x:-50},{alpha:1, x:0, ease: Power4.e
 
 
 
-//Little Trees
+
+// Scroll magic controller
 
 var controller = new ScrollMagic.Controller();
 
-//Product animation
+
+// Time line 1
+
 var tl0 = new TimelineMax();
-tl0.staggerFromTo(".product", 0.4, {x:100, alpha:0}, {x:0,alpha:1});
-tl0.staggerFromTo(".product-image", 0.6, {x:100, alpha:0}, {x:0,alpha:1});
+
+tl0.staggerFromTo(".product", 0.4, {x:-100, alpha:0}, {x:0,alpha:1,ease:Back.easeOut});
+tl0.staggerFromTo(".product-image", 0.6, {x:-100, alpha:0}, {x:0,alpha:1,ease:Back.easeOut}, 0.5);
 
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger0", duration:220 })
 				.setTween(tl0) // trigger a TweenMax.to tween
 				// .addIndicators({name: "time line 0(duration: 220)"}) // add indicators (requires plugin)
 								.addTo(controller);
+
+// Time line 2
 
 var tl1 = new TimelineMax();
 tl1.fromTo("#infoHeadline", 1, {alpha:0, y:100}, {alpha:1, y:0, ease: Power4.easeInOut});
@@ -65,6 +71,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration:250 })
 
 
 
+// Time line 3
 
 var tl2 = new TimelineMax();
 tl2.fromTo("#copy1", 1, {alpha:0, x:1000}, {alpha:1, x:0, ease: Power4.easeInOut});
@@ -77,6 +84,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger2", duration:270 })
 				.addTo(controller);
 
 
+// Time line 4
 
 var tl3 = new TimelineMax();
 tl3.fromTo("#copy2", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
@@ -89,6 +97,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger3", duration:220 })
 				.addTo(controller);
 
 
+// Time line 5
 
 var tl4 = new TimelineMax();
 tl4.fromTo("#copy3", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
@@ -99,6 +108,8 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger4", duration:220 })
 				// .addIndicators({name: "time line 4(duration: 220)"}) // add indicators (requires plugin)
 				.addTo(controller);
 
+
+// Time line 6
 
 var tl5 = new TimelineMax();
 tl5.fromTo("#productBundle", 1, {alpha:0, x:-1000}, {alpha:1, x:0, ease: Power4.easeInOut});
