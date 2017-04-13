@@ -109,6 +109,7 @@
 		position: absolute;
 		border-top: 1px solid darkgray;
 		height: 1px;
+		// transform-origin:left 0;
 	}
 
 	#line1 {
@@ -130,6 +131,27 @@
 	    top: 197px;
 	    left: 29%;
 	    transform: rotate(135deg);
+	}
+
+	#line4 {
+		width: 206px;
+	    top: 254px;
+	    left: 37%;
+	    transform: rotate(162deg);
+	}
+
+	#line5 {
+		width: 206px;
+	    top: 314px;
+	    left: 37%;
+	    transform: rotate(176deg);
+	}
+
+	#line6 {
+		width: 206px;
+		top: 377px;
+		left: 37%;
+		transform: rotate(202deg);
 	}
 
 	#icon1 {

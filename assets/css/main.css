@@ -960,6 +960,33 @@ a {
           transform: rotate(135deg);
 }
 
+.product-bundle #line4 {
+  width: 206px;
+  top: 254px;
+  left: 37%;
+  -webkit-transform: rotate(162deg);
+      -ms-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+.product-bundle #line5 {
+  width: 206px;
+  top: 314px;
+  left: 37%;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.product-bundle #line6 {
+  width: 206px;
+  top: 377px;
+  left: 37%;
+  -webkit-transform: rotate(202deg);
+      -ms-transform: rotate(202deg);
+          transform: rotate(202deg);
+}
+
 .product-bundle #icon1 {
   left: 12%;
 }
